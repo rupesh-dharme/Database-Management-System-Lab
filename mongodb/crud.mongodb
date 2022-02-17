@@ -1,0 +1,17 @@
+show dbs;
+
+use crud;
+
+db.students.insertOne({'name':'Rupesh', 'rollno': 31124});
+
+db.students.find();
+
+db.students.insertMany([
+    {'name':'Rajesh', 'rollno':31111},
+    {'name':'Omkar', 'rollno':31211},
+    {'name':'Mahajan', 'rollno':31511},
+    {'name':'Dheeraj', 'rollno':31154},
+    {'name':'Rohan', 'rollno':31181}
+]
+);
+

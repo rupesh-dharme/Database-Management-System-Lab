@@ -1,0 +1,87 @@
+PS C:\Users\HP\Rupesh\PICT\TE SEM 1\DBS Lab\Assignment 08> python 31124_Rupesh_Dharme_DBSL_Assignment_08.py
+What to perform?  
+1. Create (Insert)
+2. Read   (Select)
+3. Update (Update)
+4. Delete (Delete)
+5. Exit
+2
+Roll_No Name      
+Rupesh  31124     
+Omkar   31126     
+Gayatri 31127     
+read!
+What to perform?  
+1. Create (Insert)
+2. Read   (Select)
+3. Update (Update)
+4. Delete (Delete)
+5. Exit
+1
+Enter Roll no: 31129
+Enter name: Dheeraj
+inserted!
+What to perform?  
+1. Create (Insert)
+2. Read   (Select)
+3. Update (Update)
+4. Delete (Delete)
+5. Exit
+2
+Roll_No Name
+Rupesh  31124
+Omkar   31126
+Gayatri 31127
+Dheeraj 31129
+read!
+What to perform?
+1. Create (Insert)
+2. Read   (Select)
+3. Update (Update)
+4. Delete (Delete)
+5. Exit
+3
+Enter Roll no: 31129
+Enter name: Nikhil
+updated!
+What to perform?
+1. Create (Insert)
+2. Read   (Select)
+3. Update (Update)
+4. Delete (Delete)
+5. Exit
+2
+Roll_No Name
+Rupesh  31124
+Omkar   31126
+Gayatri 31127
+Nikhil  31129
+read!
+What to perform?
+1. Create (Insert)
+2. Read   (Select)
+3. Update (Update)
+4. Delete (Delete)
+5. Exit
+4
+Enter Roll no: 31129
+deleted!
+What to perform?
+1. Create (Insert)
+2. Read   (Select)
+3. Update (Update)
+4. Delete (Delete)
+5. Exit
+2
+Roll_No Name
+Rupesh  31124
+Omkar   31126
+Gayatri 31127
+read!
+What to perform?
+1. Create (Insert)
+2. Read   (Select)
+3. Update (Update)
+4. Delete (Delete)
+5. Exit
+5

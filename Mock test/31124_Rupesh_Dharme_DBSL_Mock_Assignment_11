@@ -1,0 +1,103 @@
+# Rupesh Dharme
+# 31124
+# TE 01
+# Mock Assignment 11
+
+show dbs
+
+use mock_assignment
+
+db
+
+db.students.insertMany([
+{
+name:'Rupesh',
+marks:97,
+Grade:'A+'
+},
+{
+name:'Tanuj',
+marks:83,
+Grade:'C'
+},
+{
+name:'Rajan',
+marks:75,
+Grade:'B'
+},
+{
+name:'Rupesh',
+marks:92,
+Grade:'A+'
+},
+{
+name:'Dheeraj',
+marks:95,
+Grade:'A+'
+},
+{
+name:'Rohan',
+marks:98,
+Grade:'A+'
+}
+])
+
+db.students.find().pretty()
+
+db.students.mapReduce(
+function(){
+    emit(this.name,this.marks);
+},
+function(key, value){
+    return Array.sum(value)
+},
+{
+query:{Grade:'A+'},
+out:'totalMarks'
+}
+)
+
+db.students.mapReduce(
+function(){
+    emit(this.name,this.marks);
+},
+function(key, value){
+    return Array.sum(value)/value.length
+},
+{
+query:{Grade:'A+'},
+out:'averageMarks'
+}
+)
+
+db.students.mapReduce(
+function(){
+    emit(this.name,this.Grade);
+},
+function(key, grade){
+    if (grade == "A+") {
+    return "Excellent";
+}
+else if (grade == "A") {
+    return "Good";
+}
+else if (grade == "B") {
+    return "Satisfactory";
+}
+else if (grade == "C") {
+    return "Poor";
+}
+else {
+    return "Invalid";
+}
+},
+{
+out:'performance'
+}
+)
+
+db.totalMarks.find().pretty()
+
+db.averageMarks.find().pretty()
+
+db.performance.find().pretty()
